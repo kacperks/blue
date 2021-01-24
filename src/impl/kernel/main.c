@@ -10,7 +10,7 @@ const char* input();
 void execute(const char* cmd);
 void output(const char* s, bool ln);
 void _puts(const char* s);
-void _putchar(char c);
+void _putchar(char c,int column);
 
 char* newline = "\n\r";
 char* version = "0.0.1 PRE-ALPHA";
@@ -46,7 +46,7 @@ void output(const char* s, bool ln) {
 
 void _puts(const char* s) {
     while(*s != 0) {
-        _putchar(*s);
+        _putchar(*s, *s);
         s++;
     }
 }
