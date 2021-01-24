@@ -51,12 +51,20 @@ void _puts(const char* s) {
     }
 }
 
-void _putchar(char c) {
-    __asm {
-        mov ah, 0Eh
-        mov al, [c]
-        mov bh, 0
-        mov bl, 0Fh
-        int 10h
-    }
+//void _putchar(char c) {
+  //  __asm {
+  //      mov ah, 0Eh
+  //      mov al, [c]
+  //      mov bh, 0
+  //      mov bl, 0Fh
+  //      int 10h
+    //}
+//}
+void _putchar(char c, int *column) {
+    char *start;
+    start = (char *)0xb8000;
+    char *loc;
+    loc = start + ((*column) * 2); //Two bytes per cell: one for the char, other for color
+    *loc = c;
+    *column += 1;
 }
