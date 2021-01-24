@@ -7,7 +7,7 @@ Operating System made for fun
 Curently no more ):
 
 To bulid you need
-              Docker
-              randomdude/gcc-cross-x86_64-elf
-              Make
-              GNU GCC Compiler 
+                  Docker
+                  randomdude/gcc-cross-x86_64-elf
+                  Make
+                  GNU GCC Compiler 
