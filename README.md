@@ -4,7 +4,6 @@ Operating System made for fun
               Kernel features
            x86 64 bit kernel
            
-Curently no more ):
 
 To bulid you need
 
@@ -12,3 +11,11 @@ To bulid you need
            randomdude/gcc-cross-x86_64-elf
            Make
            GNU GCC Compiler 
+           
+           
+Contributors :
+
+     @kacperks - programmer
+ 
+The people listed above have landed more than 10 commits in the project
+Curently no more ):
