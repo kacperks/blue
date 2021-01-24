@@ -17,7 +17,7 @@ char* version = "0.0.1 PRE-ALPHA";
 
 void kernel_main(){
     print_clear();
-    print_set_color(PRINT_COLOR_YELLOW, PRINT_COLOR_BLACK);
+    print_set_color(PRINT_COLOR_RED, PRINT_COLOR_BLACK);
     print_str("Welcome To Blue OS with 64-bit kernel!");
     output("Type 'help' for a list of commands.",1);
     output("",1);
