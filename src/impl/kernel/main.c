@@ -6,27 +6,20 @@ typedef int bool;
 
 #include <stdio.h>
 
-const char* input();
-void execute(const char* cmd);
-void output(const char* s, bool ln);
-void _puts(const char* s);
-void _putchar(char c,int column);
-
 char* newline = "\n\r";
 char* version = "0.0.1 PRE-ALPHA";
+
+//main functions:
 
 void kernel_main(){
     print_clear();
     print_set_color(PRINT_COLOR_RED, PRINT_COLOR_BLACK);
     print_str("Welcome To Blue OS with 64-bit kernel!");
-    //output("Type 'help' for a list of commands.",1);
-    //output("",1);
-    //while(1==1) {
-      //  output("> ",0);
-        //execute(input());
-      //  output("",1);
-    //}
 }
+
+
+//input functions : 
+
 void execute(const char* cmd) {//input functions not woking
     output(cmd,1);
 }
