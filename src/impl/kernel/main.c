@@ -1,13 +1,15 @@
 #include "print.h"
-
-typedef int bool;
-#define true 1
-#define false 0
+//}
+void _putchar(char c, int *column) {//input functions not woking
+    char *start;
+    start = (char *)0xb8000;
+    char *loc;
+    loc = start + ((*column) * 2);
+    *loc = c;
+    *column += 1;
+}
 
 #include <stdio.h>
-
-char* newline = "\n\r";
-char* version = "0.0.1 PRE-ALPHA";
 
 //main functions:
 
