@@ -19,32 +19,32 @@ void kernel_main(){
     print_clear();
     print_set_color(PRINT_COLOR_RED, PRINT_COLOR_BLACK);
     print_str("Welcome To Blue OS with 64-bit kernel!");
-    output("Type 'help' for a list of commands.",1);
-    output("",1);
-    while(1==1) {
-        output("> ",0);
-        execute(input());
-        output("",1);
-    }
+    //output("Type 'help' for a list of commands.",1);
+    //output("",1);
+    //while(1==1) {
+      //  output("> ",0);
+        //execute(input());
+      //  output("",1);
+    //}
 }
-void execute(const char* cmd) {
+void execute(const char* cmd) {//input functions not woking
     output(cmd,1);
 }
 
-const char* input() {
+const char* input() {//input functions not woking
     char inpt[2] = {0,0};
     scanf("%c",inpt);
     return inpt;
 }
 
-void output(const char* s, bool ln) {
+void output(const char* s, bool ln) {//input functions not woking
     _puts(s);
     if (ln==1) {
         _puts(newline);
     }
 }
 
-void _puts(const char* s) {
+void _puts(const char* s) {//input functions not woking
     while(*s != 0) {
         _putchar(*s, *s);
         s++;
@@ -60,11 +60,11 @@ void _puts(const char* s) {
   //      int 10h
     //}
 //}
-void _putchar(char c, int *column) {
+void _putchar(char c, int *column) {//input functions not woking
     char *start;
     start = (char *)0xb8000;
     char *loc;
-    loc = start + ((*column) * 2); //Two bytes per cell: one for the char, other for color
+    loc = start + ((*column) * 2);
     *loc = c;
     *column += 1;
 }
