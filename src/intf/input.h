@@ -1,5 +1,14 @@
 #include <stdio.h>
 
+typedef int bool;
+#define true 1
+#define false 0
+
+#include <stdio.h>
+
+char* newline = "\n\r";
+char* version = "0.0.1 PRE-ALPHA";
+
 class input{
 public :
   const char* input();
