@@ -4,6 +4,7 @@ Operating System made for fun
               Kernel features
            x86 64 bit kernel
            
+# bulid
 
 To bulid you need
 
@@ -12,12 +13,9 @@ To bulid you need
            Make
            GNU GCC Compiler 
            
-           
+# Credits      
 Contributors :
 
      @kacperks - programmer
  
 The people listed above have landed more than 10 commits in the project
-
-
-Curently no more ):
