@@ -1,6 +1,6 @@
 #pragma once
-#ifndef HK_CORE
-#define HK_CORE
+#ifndef BL_CORE
+#define BL_CORE
 #include <vector>
 #include <array>
 #include <unordered_map>
