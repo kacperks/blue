@@ -3,7 +3,7 @@
 class inpt{
 //input functions : 
 
-void execute(const char* cmd) {//input functions not woking
+void input::execute(const char* cmd) {//input functions not woking
     output(cmd,1);
 }
 
@@ -13,14 +13,14 @@ const char* input() {//input functions not woking
     return inpt;
 }
 
-void output(const char* s, bool ln) {//input functions not woking
+void input::output(const char* s, bool ln) {//input functions not woking
     _puts(s);
     if (ln==1) {
         _puts(newline);
     }
 }
 
-void _puts(const char* s) {//input functions not woking
+void input::_puts(const char* s) {//input functions not woking
     while(*s != 0) {
         _putchar(*s, *s);
         s++;
@@ -36,7 +36,7 @@ void _puts(const char* s) {//input functions not woking
   //      int 10h
     //}
 //}
-void _putchar(char c, int *column) {//input functions not woking
+void input::_putchar(char c, int *column) {//input functions not woking
     char *start;
     start = (char *)0xb8000;
     char *loc;
