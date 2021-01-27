@@ -1,13 +1,4 @@
 #include "print.h"
-//}
-void _putchar(char c, int *column) {//input functions not woking
-    char *start;
-    start = (char *)0xb8000;
-    char *loc;
-    loc = start + ((*column) * 2);
-    *loc = c;
-    *column += 1;
-}
 
 #include <stdio.h>
 
