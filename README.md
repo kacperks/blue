@@ -10,7 +10,7 @@ To bulid you need
 
 * Docker
 * randomdude/gcc-cross-x86_64-elf
-*  Make
+*  GNUMake
 * GNU GCC Compiler 
            
 # Credits      
