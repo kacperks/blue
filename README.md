@@ -9,6 +9,12 @@ To bulid you need
 *  GNUMake
 * GNU GCC Compiler 
            
+# To Do
+
+* ARM support
+* 32 bits version
+* keyboard support
+
 # Credits      
 Contributors :
 
