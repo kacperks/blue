@@ -1,5 +1,5 @@
 # blue
-Operating System made for fun
+Operating System and kernel made for fun
 # bulid
 
 To bulid you need
